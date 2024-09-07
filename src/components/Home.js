@@ -1,11 +1,13 @@
 import React from 'react'
 import { assets, doctors, specialityData } from '../assets/assets'
 import '../style/Home.css'
+
 const newLocal =<p className='text-success'><span className='dot'>.</span>  Available</p>
 const Home = () => {
   return (
     <div className='home'>
-        <div className='home-container'>
+      
+        <div className='home-container container'>
             <div className='home-card card bg-primary text-white '>
               <div className='head-content'>
                 <h3 className='text-white fw-bolder'>Book Appointment <br></br>
@@ -52,9 +54,9 @@ const Home = () => {
                 </div>
 
 
-           <div className='card bg-primary'>
-            <div>
-            <h2 className='text-light'>Book Appointment<br></br> Our Trusted Doctors</h2>
+           <div className='card bottom-card bg-primary container'>
+            <div className='bottom-content'>
+            <h2 className='text-light'>Book Appointment<br></br> 10+ Trusted Doctors</h2>
                   <button className='btn btn-light'>Create account</button>
             </div>
                   <div>

@@ -1,7 +1,8 @@
 .home-container{
     background: aliceblue;
-    margin: 0 auto;
-    max-width: 1750px;
+    flex: 1;
+    margin-top: 20px;
+  
 }
 .home-card{
     width: 100%;
@@ -89,6 +90,11 @@
     color: #333; /* Adjust color as needed */
 }
 @media (max-width:768px) {
+    .home-container{
+        margin: 0;
+        padding: 0;
+        width: 100%;
+    }
     .header-img{
         width: 300px;
         margin: 0 auto;
@@ -99,6 +105,7 @@
     }
     .special{
         gap: 2px;
+        width: 100%;
     }
     .spec-img img{
         width: 40px;
@@ -120,7 +127,7 @@
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    gap: 10px;
+    gap: 20px;
     perspective: 1000px;
 }
 .doctor-card{
@@ -140,4 +147,30 @@
     font-size: 4em;
     display: inline-block;
     font-weight: 900;
+}
+ /* bottom-card */
+.bottom-card{
+    margin-top: 100px;
+    margin-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    max-height: 400px;
+ 
+}
+.bottom-card img{
+    margin: 0 auto;
+    margin-right: 0;
+    float: right;
+    margin-top: -150px;
+    width: 350px;
+    height: 350px;
+  
+}
+.bottom-content{
+    padding: 8px ;
+}
+.bottom-content button{
+    border: none;
+    border-radius: 15px;
 }
