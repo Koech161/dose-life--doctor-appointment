@@ -38,9 +38,9 @@ const Home = () => {
                 <div className='doctors'>
                   <h2>Doctors to Book</h2>
                   <p>Simply browse through our <br></br>extensive list of trusted<br></br> doctors.</p>
-                  <div className='doc-cards '>
+                  <div className='doc-cards container'>
                   {doctors.map((doc)=>(
-                    <div className='doctor-card card' key={doc.id}>
+                    <div className='doctor-card card card-hover-effect style="width: 18rem;' key={doc.id}>
                       <img className='doc-img mb-3' src={doc.image} alt={doc.name}/>
                       {newLocal}
                       <h3>{doc.name}</h3>
@@ -52,7 +52,15 @@ const Home = () => {
                 </div>
 
 
-           
+           <div className='card bg-primary'>
+            <div>
+            <h2 className='text-light'>Book Appointment<br></br> Our Trusted Doctors</h2>
+                  <button className='btn btn-light'>Create account</button>
+            </div>
+                  <div>
+                    <img src={assets.appointment_img} alt='appointment'/>
+                  </div>
+           </div>
         </div>
         
     </div>

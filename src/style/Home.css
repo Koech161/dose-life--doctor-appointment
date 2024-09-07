@@ -8,7 +8,7 @@
     max-width: 1700px;
     
     margin: 0 auto;
-    background: rgb(28, 28, 226); /* You can use Bootstrap’s bg-primary class or this */
+    background: rgb(7, 7, 231); /* You can use Bootstrap’s bg-primary class or this */
     color: #fff; /* Ensure text color is white */
     display: flex; /* Flexbox for layout */
     flex-wrap: wrap; /* Allow items to wrap */
@@ -66,6 +66,9 @@
     width: 100%;
     max-width: 700px;
 }
+.spec-img{
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
 .spec-img img{
     width: 70px;
     flex: 1 1 calc(33.333% - 20px); /* Adjusts to 3 columns layout with gap */
@@ -75,6 +78,10 @@
     margin: 0;
     padding: 0;
     text-align: center;
+  
+}
+.spec-img:hover{
+    transform: translateY(-10px);
 }
 .spec-img figcaption {
     margin-top: 10px;
@@ -114,13 +121,21 @@
     align-items: center;
     flex-wrap: wrap;
     gap: 10px;
+    perspective: 1000px;
 }
 .doctor-card{
     width: 320px;
     flex-direction: row;
     align-items: center;
     border-radius: 10px;
-}                  
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}  
+.doctor-card:hover{
+    transform: translateY(-10px) translateX(10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+
 .dot{
     font-size: 4em;
     display: inline-block;
