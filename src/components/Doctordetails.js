@@ -15,23 +15,29 @@ export const Doctordetails = () => {
     }
   return (
     <div className='container'>
-            <div className='details'>
+            <div className='details row'>
+                <div className='col-md-4'>
                 <img className='card bg-primary' src={doctor.image} alt={doctor.name}/>
-                <div className='card'>
-                    <h2>{doctor.name} <img src={assets.verified_icon} alt='verified'/></h2>
-                    <p>{doctor.degree} - {doctor.speciality} <span className='btn'>{doctor.experience}</span></p>
-                    <p>About</p>
+                </div>
+                <div className='col-md-8'>
+                <div className='card p-3'>
+                    <h2>{doctor.name} <img src={assets.verified_icon} alt='verified' className='ms-2'/></h2>
+                    <p>{doctor.degree} - {doctor.speciality} <span className='badge bg-info'>{doctor.experience}</span></p>
+                    <p className='fw-bold'>About</p>
                     <p>{doctor.about}</p>
                     <h4>Appointment fee: ${doctor.fees}</h4>
                  </div>
-                 <input type='date'/>
-                 <div className='time-slots'>
+                 </div>
+                 </div>
+                 <div className='my-4'>
+                 <input type='date' className='form-control mb-3'/>
+                 <div className='time-slots d-flex flex-wrap mb-3'>
                  {times.map((time,index)=>(
-                    <span className={`time-slot btn ${time === selectedTime ? 'selected' : '' }`} key={index}>{time}</span>
+                    <span className={`time-slot btn btn-outline-primary m-1${time === selectedTime ? 'selected' : '' }`} key={index}>{time}</span>
                  ))}
                  </div>
                 
-                 <button className='btn btn-light bg-primary text-light'>Book an appointment</button>
+                 <button className='btn btn-light bg-primary text-light btn-primary'>Book an appointment</button>
             </div>
           
     </div>

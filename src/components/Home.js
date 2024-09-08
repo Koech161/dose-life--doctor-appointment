@@ -43,7 +43,7 @@ const Home = () => {
                   <div className='doc-cards container'>
                   {doctors.slice(0,8).map((doc)=>(
                     <div className='doctor-card card card-hover-effect style="width: 18rem;' key={doc._id}>
-                      <img className='doc-img mb-3' src={doc.image} alt={doc.name}/>
+                      <img className='doc-img card-img mb-3' src={doc.image} alt={doc.name}/>
                       {newLocal}
                       <h3>{doc.name}</h3>
                       <p>{doc.speciality}</p>
