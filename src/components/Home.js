@@ -38,11 +38,11 @@ const Home = () => {
                 </div>
 
                 <div className='doctors'>
-                  <h2>Doctors to Book</h2>
+                  <h2>Top Doctors to Book</h2>
                   <p>Simply browse through our <br></br>extensive list of trusted<br></br> doctors.</p>
                   <div className='doc-cards container'>
-                  {doctors.map((doc)=>(
-                    <div className='doctor-card card card-hover-effect style="width: 18rem;' key={doc.id}>
+                  {doctors.slice(0,8).map((doc)=>(
+                    <div className='doctor-card card card-hover-effect style="width: 18rem;' key={doc._id}>
                       <img className='doc-img mb-3' src={doc.image} alt={doc.name}/>
                       {newLocal}
                       <h3>{doc.name}</h3>
