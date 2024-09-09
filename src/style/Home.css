@@ -6,8 +6,7 @@
 }
 .home-card{
     width: 100%;
-    max-width: 1700px;
-    
+    /* max-width: 1700px; */
     margin: 0 auto;
     background: rgb(60, 60, 168); /* You can use Bootstrap’s bg-primary class or this */
     color: #fff; /* Ensure text color is white */
@@ -67,6 +66,7 @@
     width: 100%;
     max-width: 700px;
     cursor: pointer;
+    overflow: hidden;
 }
 .spec-img{
     transition: transform 0.3s ease, box-shadow 0.3s ease;

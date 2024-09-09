@@ -21,7 +21,7 @@ nav ul a{
 }
 nav ul a:hover{
     color: blue;
-    text-decoration: underline #ca0606;
+    text-decoration: underline 3px #7767d4;
 }
 .logo{
   background: white;
@@ -30,4 +30,13 @@ nav ul a:hover{
   width: 100px;
  
 
+}
+
+/* 
+.....................................Footer..................... */
+.footer-logo img{
+ width: 100px;
+}
+footer{
+  border-top: 1px solid #ccc;
 }

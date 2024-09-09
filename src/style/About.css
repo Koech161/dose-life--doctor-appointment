@@ -1,0 +1,15 @@
+.hover-bg-primary:hover{
+   background-color: rgb(82, 82, 243);
+   color: white;
+}
+/* .................All Doctors..................... */
+.shadow-sm{
+    gap: 10px;
+   transition: tranform 0.3s ease infinite;
+}
+.shadow-sm:hover{
+transform: translateY(-10px);
+}
+.card-hover-effect{
+    background-color: rgb(227, 236, 238);
+}

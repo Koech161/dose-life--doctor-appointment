@@ -1,23 +1,28 @@
 import React from 'react'
 import { assets, doctors, specialityData } from '../assets/assets'
 import '../style/Home.css'
+import { useNavigate } from 'react-router-dom'
 
 const newLocal =<p className='text-success'><span className='dot'>.</span>  Available</p>
 const Home = () => {
+ const navigate = useNavigate()
+  const handleclik = (id) =>{
+      navigate(`/doctors/${id}`)
+  }
   return (
     <div className='home'>
       
         <div className='home-container container'>
-            <div className='home-card card bg-primary text-white '>
+            <div className='home-card card bg-primary text-white'>
               <div className='head-content card-body'>
                 <h3 className='text-white fw-bolder'>Book Appointment <br></br>
                 With Trusted Doctors</h3>
             <img className='group-img img-fluid' src={assets.group_profiles}   alt='group-profiles'/> 
             <p>Simply browse through our extensive list of trusted doctors,<br></br>
             schedule your appointment hassle-free.</p>
-            <button className='btn btn-light' >Book appointment   <img src={assets.arrow_icon} alt='arrow'/> </button>
+            <button className='btn btn-light ' >Book appointment   <img src={assets.arrow_icon} alt='arrow'/> </button>
             </div>
-            <img className='header-img img-fluid' src={assets.header_img} alt='header'/>
+            <img className='header-img ' src={assets.header_img} alt='header'/>
             </div>
             <div className='speciality mt-4'>
                <h3>Find by Speciality
@@ -40,9 +45,9 @@ const Home = () => {
                 <div className='doctors mt-4'>
                   <h2>Top Doctors to Book</h2>
                   <p>Simply browse through our <br></br>extensive list of trusted<br></br> doctors.</p>
-                  <div className='doc-cards container row'>
+                  <div className='doc-cards container row' >
                   {doctors.slice(0,8).map((doc)=>(
-                    <div className='doctor-card card card-hover-effect col-md-3 mb-4 style="width: 18rem;' key={doc._id}>
+                    <div className='doctor-card card card-hover-effect col-md-3 mb-4 style="width: 18rem;' key={doc._id} onClick={()=>handleclik(doc._id)}>
                       <img className='doc-img card-img-top bg-primary-light mb-3' src={doc.image} alt={doc.name}/>
                       {newLocal}
                       <h3>{doc.name}</h3>
@@ -51,7 +56,7 @@ const Home = () => {
                       </div>
                   ))}
                   </div>
-                  <button className='btn btn-light bg-primary'>More <span>{'>'}{'>'}</span></button>
+                  <button className='btn btn-light bg-primary'  onClick={()=>handleclik(doctors)}>More <span>{'>'}{'>'}</span></button>
                 </div>
 
 

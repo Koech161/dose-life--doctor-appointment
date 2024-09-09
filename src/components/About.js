@@ -1,6 +1,6 @@
 import React from 'react'
 import { assets } from '../assets/assets'
-import { hover } from '@testing-library/user-event/dist/hover'
+import '../style/About.css'
 
 const About = () => {
   return (
@@ -32,7 +32,7 @@ const About = () => {
                 </div>
             </div>
             <div className='col-md-4 mb-4'>
-                <div className='card p-3 shadow-sm hover-effect-bg-primary'>
+                <div className='card p-3 shadow-sm hover-bg-primary'>
                     <h5 className='card-title fw-bold'>Convenience</h5>
                     <p className='card-text'>Access to a network of trusted healthcare professionals in your area.</p>
                 </div>
