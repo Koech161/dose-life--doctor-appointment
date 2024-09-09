@@ -9,6 +9,9 @@ const Home = () => {
   const handleclik = (id) =>{
       navigate(`/doctors/${id}`)
   }
+  const handledoctors= ()=> {
+    navigate('/doctors')
+  }
   return (
     <div className='home'>
       
@@ -20,9 +23,9 @@ const Home = () => {
             <img className='group-img img-fluid' src={assets.group_profiles}   alt='group-profiles'/> 
             <p>Simply browse through our extensive list of trusted doctors,<br></br>
             schedule your appointment hassle-free.</p>
-            <button className='btn btn-light ' >Book appointment   <img src={assets.arrow_icon} alt='arrow'/> </button>
+            <button className='btn btn-light ' onClick={handledoctors} >Book appointment   <img src={assets.arrow_icon} alt='arrow'/> </button>
             </div>
-            <img className='header-img ' src={assets.header_img} alt='header'/>
+            <img className='header-img card-img' src={assets.header_img} alt='header'/>
             </div>
             <div className='speciality mt-4'>
                <h3>Find by Speciality
@@ -56,7 +59,7 @@ const Home = () => {
                       </div>
                   ))}
                   </div>
-                  <button className='btn btn-light bg-primary'  onClick={()=>handleclik(doctors)}>More <span>{'>'}{'>'}</span></button>
+                  <button className='btn btn-light bg-primary'  onClick={handledoctors}>More <span>{'>'}{'>'}</span></button>
                 </div>
 
 
@@ -66,7 +69,7 @@ const Home = () => {
                   <button className='btn btn-light'>Create account</button>
             </div>
                   <div>
-                    <img src={assets.appointment_img} alt='appointment'/>
+                    <img className='img-fluid mb-4' src={assets.appointment_img} alt='appointment'/>
                   </div>
            </div>
         </div>

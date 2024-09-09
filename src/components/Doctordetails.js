@@ -6,9 +6,8 @@ import { useParams } from 'react-router-dom'
 export const Doctordetails = () => {
     const [selectedTime, setSelectedTime] = useState('');
     const {id} = useParams()
-    console.log('ID from URL:', id);
+  
     const doctor = doctors.find(doc => doc._id === id)
-    console.log('Doctor Data:', doctor);
     const times = ['09:00 AM', '10:00 AM', '11:00 AM', '01:00 PM', '02:00 PM', '03:00 PM']
     if (!doctor) {
         return <p>Doctor not found</p>;
@@ -17,7 +16,7 @@ export const Doctordetails = () => {
     <div className='container'>
             <div className='details row'>
                 <div className='col-md-4'>
-                <img className='card bg-primary' src={doctor.image} alt={doctor.name}/>
+                <img className='card bg-primary img-fluid' src={doctor.image} alt={doctor.name}/>
                 </div>
                 <div className='col-md-8'>
                 <div className='card p-3'>

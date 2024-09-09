@@ -1,6 +1,7 @@
 .hover-bg-primary:hover{
    background-color: rgb(82, 82, 243);
    color: white;
+   cursor: pointer;
 }
 /* .................All Doctors..................... */
 .shadow-sm{

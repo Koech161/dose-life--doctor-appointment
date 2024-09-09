@@ -12,7 +12,7 @@ const Footer = () => {
            individuals face when it comes to scheduling doctor appointments and managing <br></br>their health records.</p>
       </div>
         <div className='col-md-4 mb-4'>
-            <h1 className='lead fw-bold'>COMPANY</h1>
+            <h2 className=''>COMPANY</h2>
             <p>Home</p>
             <p>About us</p>
             <p>Delivery</p>
@@ -20,8 +20,8 @@ const Footer = () => {
             
         </div>
         <div className='col-md-3  '>
-            <h1>GET IN TOUCH</h1>
-            <p>+0-000-012-344</p>
+            <h2>GET IN TOUCH</h2>
+            <p>+0-123-456-789</p>
             <p>doselife0@gmail.com</p>
         </div>
     </div>
