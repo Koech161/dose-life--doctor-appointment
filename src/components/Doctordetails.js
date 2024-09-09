@@ -12,6 +12,9 @@ export const Doctordetails = () => {
     if (!doctor) {
         return <p>Doctor not found</p>;
     }
+    const handleappointment = ()=>{
+      alert('See you soon.')
+    }
   return (
     <div className='container'>
             <div className='details row'>
@@ -36,7 +39,7 @@ export const Doctordetails = () => {
                  ))}
                  </div>
                 
-                 <button className='btn btn-light bg-primary text-light btn-primary'>Book an appointment</button>
+                 <button className='btn btn-light bg-primary text-light btn-primary' onClick={handleappointment}>Book an appointment</button>
             </div>
           
     </div>

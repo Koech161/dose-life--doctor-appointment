@@ -5,7 +5,7 @@ import '../style/About.css'
 const About = () => {
   return (
     <div className='container my-5'>
-    <h1 className='text-center mb-4 fw-bold'>About Us</h1>
+  <hr/>  <h1 className='text-center mb-4 fw-bold'>About Us</h1> <hr></hr>
     <div className='row align-items-center'>
         <div className='col-md-6 mb-4'>
             <img className='img-fluid rounded shadow-sm' src={assets.about_image} alt='about' />
