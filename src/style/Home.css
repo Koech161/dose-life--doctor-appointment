@@ -1,5 +1,5 @@
 .home-container{
-    background: white;
+  
     flex: 1;
     margin-top: 20px;
   
@@ -142,6 +142,9 @@
 .doctor-card:hover{
     transform: translateY(-20px);
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+.bg-primary-light{
+    background-color: #f0f8fd;
 }
 
 .dot{
