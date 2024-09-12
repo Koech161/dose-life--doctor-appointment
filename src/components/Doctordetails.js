@@ -13,7 +13,7 @@ export const Doctordetails = () => {
         return <p>Doctor not found</p>;
     }
     const handleappointment = ()=>{
-      alert('See you soon.')
+      alert('Thank you. See you soon.')
     }
   return (
     <div className='container'>

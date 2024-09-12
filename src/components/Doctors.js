@@ -11,11 +11,11 @@ const Doctors = () => {
     }
    
   return (
-<div className='container'>
+<div className='container  '>
     <h1 className='text-center'>Our Trusted Doctors</h1>
 <div className='row'>
     {doctors.map(doc => (
-        <div className='col-md-4 mb-4' key={doc._id} onClick={() => handleDetails(doc._id)}>
+        <div className='col-md-4 mb-4 ' key={doc._id} onClick={() => handleDetails(doc._id)}>
             <div className='card shadow-sm border-light'>
                 <img className='card-img-top card-hover-effect' src={doc.image} alt={doc.name} />
                     <div className='card-body text-center'>

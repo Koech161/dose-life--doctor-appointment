@@ -66,7 +66,7 @@ const Home = () => {
            <div className='card bottom-card bg-primary container mt-4'>
             <div className='bottom-content card-body'>
             <h2 className='text-light'>Book Appointment<br></br> 10+ Trusted Doctors</h2>
-                  <button className='btn btn-light'>Create account</button>
+                  <button className='btn btn-light '>Create account</button>
             </div>
                   <div>
                     <img className='img-fluid mb-4' src={assets.appointment_img} alt='appointment'/>
