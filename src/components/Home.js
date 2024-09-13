@@ -13,7 +13,7 @@ const Home = () => {
     navigate('/doctors')
   }
   return (
-    <div className='home'>
+    <div className='home' style={{marginTop: '150px'}}>
       
         <div className='home-container container'>
             <div className='home-card card bg-primary text-white'>

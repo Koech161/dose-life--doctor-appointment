@@ -11,7 +11,7 @@ const Doctors = () => {
     }
    
   return (
-<div className='container  '>
+<div className='container  'style={{marginTop: '150px'}}>
     <h1 className='text-center'>Our Trusted Doctors</h1>
 <div className='row'>
     {doctors.map(doc => (

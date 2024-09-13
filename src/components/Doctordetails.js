@@ -16,7 +16,7 @@ export const Doctordetails = () => {
       alert('Thank you. See you soon.')
     }
   return (
-    <div className='container'>
+    <div className='container' style={{marginTop: '150px'}}>
             <div className='details row'>
                 <div className='col-md-4'>
                 <img className='card bg-primary img-fluid' src={doctor.image} alt={doctor.name}/>
@@ -35,7 +35,7 @@ export const Doctordetails = () => {
                  <input type='date' className='form-control mb-3'/>
                  <div className='time-slots d-flex flex-wrap mb-3'>
                  {times.map((time,index)=>(
-                    <span className={`time-slot btn btn-outline-primary m-1${time === selectedTime ? 'selected' : '' }`} key={index}>{time}</span>
+                    <span className={`time-slot btn btn-outline-primary m-1' ${time === selectedTime ? 'selected' : '' }`} key={index}>{time}</span>
                  ))}
                  </div>
                 

@@ -4,7 +4,7 @@ import '../style/About.css'
 
 const About = () => {
   return (
-    <div className='container my-5'>
+    <div className='container my-5' style={{marginTop:'550px'}}>
   <hr/>  <h1 className='text-center mb-4 fw-bold'>About Us</h1> <hr></hr>
     <div className='row align-items-center'>
         <div className='col-md-6 mb-4'>
