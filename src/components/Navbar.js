@@ -11,7 +11,7 @@ const handleLogin = () =>{
   navigate('/login')
 }
   return (
-    <nav className="navbar navbar-expand-lg navbar-light bg-light" aria-label='breadcrumb'>
+    <nav className="navbar navbar-expand-lg navbar-light bg-light fixed-top" aria-label='breadcrumb'>
       <div className="container">
         <Link className="navbar-brand" to="/">
           <img src={logo} alt="logo" style={{ height: '40px' }} />
@@ -39,7 +39,7 @@ const handleLogin = () =>{
           </ul>
         </div>
       </div>
-      <Link className='navbar-brand' to='/'>
+      <Link className='navbar-brand' to='/login'>
         <button className='btn badge rounded-pill text-light btn-light bg-primary btn-secondary' onClick={handleLogin}>Create account</button>
       </Link>
     </nav>
